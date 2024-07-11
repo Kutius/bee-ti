@@ -22,10 +22,17 @@ export default defineConfig({
     }),
     presetTypography(),
     presetWebFonts({
+      provider: 'bunny',
       fonts: {
-        sans: 'DM Sans',
-        serif: 'DM Serif Display',
-        mono: 'DM Mono',
+        sans: 'Noto Sans SC',
+        serif: [
+          {
+            provider: 'fontshare',
+            name: 'Technor',
+          },
+          'Noto serif SC'
+        ],
+        mono: 'Fira Mono',
       },
     }),
   ],
