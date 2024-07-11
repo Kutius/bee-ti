@@ -1,0 +1,35 @@
+html,
+body,
+#__nuxt {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  --c-bg: #fff;
+  --c-scrollbar: #eee;
+}
+
+html.dark {
+  --c-bg: #050505;
+  --c-scrollbar: #111;
+  background: var(--c-bg);
+  color: white;
+}
+
+* {
+  scrollbar-color: var(--c-scrollbar) var(--c-bg);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: var(--c-bg);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-scrollbar);
+  border-radius: 10px;
+}

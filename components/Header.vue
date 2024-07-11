@@ -1,5 +1,5 @@
 <template>
-  <header p="x10 y6" flex="~" items-center>
+  <header p="x12 y6" flex="~" items-center>
     <NuxtLink to="/" class="text-2xl text-yellow-600 font-serif dark:text-yellow-300">
       BEE WITH T&I
     </NuxtLink>

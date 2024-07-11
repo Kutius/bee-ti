@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import '~/main.css'
 import { appName } from '~/constants'
 
 useHead({
@@ -12,18 +13,3 @@ useHead({
     <NuxtPage />
   </NuxtLayout>
 </template>
-
-<style>
-html,
-body,
-#__nuxt {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-html.dark {
-  background: #050505;
-  color: white;
-}
-</style>
