@@ -1,0 +1,12 @@
+diff --git a/dist/local.mjs b/dist/local.mjs
+index 4ac349cb426514b69b6767e47063496cd3425dc3..1ef92e2c72e7fb0385002de63e87913560965618 100644
+--- a/dist/local.mjs
++++ b/dist/local.mjs
+@@ -60,6 +60,7 @@ function createLocalFontProcessor(options) {
+     },
+     async transformCSS(css) {
+       return await replaceAsync(css, fontUrlRegex, async (url) => {
++        console.log('Replace fontUrlRegex:',css)
+         const hash = getHash(url);
+         const ext = url.split(".").pop();
+         let name = "";

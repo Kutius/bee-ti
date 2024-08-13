@@ -8,6 +8,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import { createLocalFontProcessor } from '@unocss/preset-web-fonts/local'
 
 export default defineConfig({
   shortcuts: [
@@ -30,10 +31,11 @@ export default defineConfig({
             provider: 'fontshare',
             name: 'Technor',
           },
-          'Noto serif SC'
+          'Noto serif SC',
         ],
         mono: 'Fira Mono',
       },
+      processors: createLocalFontProcessor(),
     }),
   ],
   transformers: [
